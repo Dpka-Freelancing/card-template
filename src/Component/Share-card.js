@@ -4,7 +4,7 @@ const Share = () => {
     return(
 
         <div className="share pt-3 pb-3">
-        <div className="contain-template back-g">
+        <div className="contain-template back-g shar-t1">
             <div className="container">
                 <div className="row">
                     <div className="share-cmn">

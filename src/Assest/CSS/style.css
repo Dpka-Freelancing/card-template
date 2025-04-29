@@ -1,42 +1,74 @@
 /* home component t1*/
+.contain-template.back-g.hm {
+  background-image: url('../Images/bg/Blob.png'), url('../Images/bg/Blob-1.png');
+  background-repeat: no-repeat no-repeat;
+  background-position: 0 60%, bottom right;
+}
+
+.logo-t1 {
+  background: #D6EBDC;
+  width: auto;
+  top: 16px;
+  border-radius: 0 00px 90px 90px;
+  padding: 24px 15px;
+  text-align: center;
+  margin-top: -15px !important;
+  margin: auto;
+}
+
 .btn-a {
   width: 130px;
-  background:#D9D9D9;
+  background: #D9D9D9;
   font-size: 17px;
-  padding:5px 20px;
-  border-radius:50px;
+  padding: 5px 20px;
+  border-radius: 50px;
+  margin: auto;
 }
+
 .temp-hme.btn {
   display: flex;
   gap: 10px;
 }
-.btn-a a{
+
+.btn-a a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
+
 .infot1 {
   display: flex;
-  gap:27px;
+  gap: 27px;
 }
+
 .infot1 i {
   color: #2F88FF;
   font-size: 24px;
   line-height: 0px;
 }
+
 .infot1 p {
   font-weight: 600;
   font-size: 16px;
 }
+
 .social-icon {
- text-align: center;
+  text-align: center;
   font-size: 24px;
 }
+
 .social-icon i {
-  padding:5px 10px;
+  padding: 5px 10px;
 }
+
 /* home component t1 end */
 
 /* about component css */
+.contain-template.back-g.abt-t1 {
+  background-image: url('../Images/bg/Blob-2.png'), url('../Images/bg/Blob-4.png');
+  background-repeat: no-repeat;
+  background-position: right 18%, bottom left;
+}
+
 .abt-det {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -67,6 +99,12 @@
 /* abount coponent end */
 
 /* Product Component start */
+.contain-template.back-g.prod-t1 {
+  background-image: url('../Images/bg/Blob-5.png'), url('../Images/bg/Blob-6.png');
+  background-repeat: no-repeat;
+  background-position: left 8%, right 69%;
+}
+
 .prod-det img,
 .kfeature img {
   width: 25px;
@@ -103,16 +141,17 @@
 }
 
 .enq-sec {
-  background:#ECDAC4;
-  border-radius:50px;
+  background: #ECDAC4;
+  border-radius: 50px;
   display: flex;
-  padding:10px 25px;
+  padding: 10px 25px;
   position: relative;
 }
+
 .enq-sec button {
-  background:#E3C72C;
-  border:1px solid #E3C72C;
-  border-radius:50px;
+  background: #E3C72C;
+  border: 1px solid #E3C72C;
+  border-radius: 50px;
   font-size: 16px;
   right: 25px;
   position: absolute;
@@ -120,56 +159,83 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
+
 .enq-sec h5.t1 {
   font-size: 23px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin-bottom: 0;
-  padding:4px 0;
+  padding: 4px 0;
 }
+
 /* Product component end */
 
 /* feature component start */
+.contain-template.back-g.featu-t1 {
+  background-image: url('../Images/bg/Blob-7.png'), url('../Images/bg/Blob-8.png'), url('../Images/bg/blog-9.png');
+  background-repeat: no-repeat;
+  background-position: right top, left 38%, right bottom;
+}
+
 .fea-det img {
   width: 20px;
 }
+
 .fea1 p.strong {
   margin-bottom: 0;
 }
+
 /* feature component end */
 
 /* payment component start */
+.contain-template.back-g.paym-t1 {
+  background-image: url('../Images/bg/Blob.png'), url('../Images/bg/Blob-2.png');
+  background-repeat: no-repeat;
+  background-position: left 1%, right;
+}
+
 .pay1 h6 {
   font-size: 19px;
 }
+
 .pay1 img {
   width: 25px;
 }
+
 .pay1 .abt-det p {
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 18px;
 }
-.pay1 .abt-det{
+
+.pay1 .abt-det {
   grid-template-columns: 46% 54%;
 }
+
 .pay-img {
   text-align: center;
 }
+
 /* payment component end */
 
 /* gallery component start */
-
+.contain-template.back-g.galy-t1 {
+  background-image: url('../Images/bg/Blob-7.png'), url('../Images/bg/Blob-5.png');
+  background-repeat: no-repeat;
+  background-position: right top, left 90%;
+}
 
 .gallery-img {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 175px;
   text-align: center;
 }
+
 .gallery-item.wide {
   grid-column: span 2;
 }
+
 .gallery-item.tall {
   grid-row: span 2;
   grid-auto-rows: 175px;
@@ -181,85 +247,114 @@
 .copy-cmn {
   text-align: center;
 }
+
 .copy-cmn p {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: 200;
 }
+
 /* copy rights end */
 /* share card component start */
+
+.contain-template.back-g.shar-t1 {
+  background-image: url('../Images/bg/Blob-2.png'), url('../Images/bg/Blob-4.png');
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+}
+
 .share-btn button {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
+
 .url-bx {
   background-color: #fff;
   box-shadow: 0px 3px 2px 4px #ebebeb;
-  padding:12px;
-  border-radius:5px;
+  padding: 12px;
+  border-radius: 5px;
 }
+
 .url-bx p {
   margin-bottom: 0;
 }
+
 .share-qr.pt-5 {
   text-align: center;
 }
+
 .share-btn {
   display: flex;
   column-gap: 2%;
 }
-.sh-qr, .sve-qr {
+
+.sh-qr,
+.sve-qr {
   width: 49%;
-  padding:6px;
-  border-radius:5px;
-  border:none;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
   box-shadow: 0 2px 2px 2px #ccc;
 }
 
 /* share card component end */
 
 /* feedback component start */
+.contain-template.back-g.fedb-t1 {
+  background-image: url('../Images/bg/Blob-5.png'), url('../Images/bg/Blob-2.png'), url('../Images/bg/Blob-4.png');
+  background-repeat: no-repeat;
+  background-position: top left, center right, bottom left;
+}
+
+
 .feed-form {
   padding: 30px;
   text-align: center;
-  border:1px solid #000;
-  border-radius:35px;
+  border: 1px solid #000;
+  border-radius: 35px;
   position: relative;
   margin-top: 55px;
   margin-top: 55px;
   padding-top: 75px;
 }
+
 .heart-icon {
 
   width: 89px;
   height: 85px;
   position: absolute;
-  border-radius:50%;
-  padding:20px 10px;
-    font-size: 27px;
-    border:1px solid #000;
-    left: 38%;
-    top: -42px;
-    background:#fff;
+  border-radius: 50%;
+  padding: 20px 10px;
+  font-size: 27px;
+  border: 1px solid #000;
+  left: 38%;
+  top: -42px;
+  background: #fff;
 }
-.form-des input, textarea {
 
-  padding:15px;
-  border-radius:15px;
-  border:none;
-  background:rgba(108, 82, 51, 0.1);
+.form-des input,
+textarea {
+
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  background: rgba(108, 82, 51, 0.1);
 }
+
 .feed-form1 h6 {
   text-align: left;
   margin-bottom: 0;
 }
+
 .feed-head h6 {
   margin-bottom: 35px;
 }
+
 .star {
   text-align: left;
   color: #EFC356;
   font-size: 20px;
   margin-bottom: 15px;
 }
+
 /* feedback component end */

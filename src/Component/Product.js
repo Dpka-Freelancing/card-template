@@ -12,7 +12,7 @@ import img8 from "../Assest/Images/Rectangle 24.png"
 const Product = () => {
     return (
         <div className="product pt-3 pb-3">
-            <div className="contain-template back-g">
+            <div className="contain-template back-g prod-t1">
                 <div className="container">
                     <div className="row">
                         <div className="prod-cmn">
@@ -36,7 +36,7 @@ const Product = () => {
                                 <p className="strong"><img src={img6} alt="" /> Create your SpotCard today & grow your business effortlessly! <img src={img7} alt="" /></p>
                             </div>
                             <div className="prod-img">
-                                <img src={img8} alt=""  />
+                                <img src={img8} alt="" class="img-fluid"  />
                                 <div className="enq-sec mt-5">
                                    <h5 className="t1">Talk with our team</h5>
                                    <button className="enq-btn" type="submit">Enquire</button>

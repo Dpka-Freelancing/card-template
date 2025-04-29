@@ -5,6 +5,7 @@ import { RiGlobeFill, RiMailCheckFill } from "react-icons/ri";
 import { MdCall } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 
+import logo from "../Assest/Images/logo1.png"
 
 import About from '../Component/About';
 import Product from "../Component/Product";
@@ -22,10 +23,13 @@ const T1 = () => {
     return (
         <div className="template-bg1 pt-3 pb-3">
             <div className="v-template1">
-                <div className="contain-template back-g">
+                <div className="contain-template back-g hm">
                     <div className="container">
                         <div className="row">
-                            <div className="temp-head">
+                            <div className="logo-t1">
+                                <img src={logo} alt="logo" className="img-fluid"/>
+                            </div>
+                            <div className="temp-head mt-4">
                                 <h1 className="t1">Spotcard</h1>
                                 <h3 className="t1">India's Leading Digital Vcard Agency</h3>
                             </div>

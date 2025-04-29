@@ -23,7 +23,7 @@ import img18 from '../Assest/Images/Rectangle 24.png'
 const Feature = () => {
     return (
         <div className="feature pt-3 pb-3">
-            <div className="contain-template back-g">
+            <div className="contain-template back-g featu-t1">
                 <div className="container">
                     <div className="row">
                         <div className="fea-cmn pb-4">
@@ -101,7 +101,7 @@ const Feature = () => {
                             </div>
                         </div>
                         <div className="prod-img">
-                                <img src={img18} alt=""  />
+                                <img src={img18} alt="" class="img-fluid"  />
                                 <div className="enq-sec mt-5">
                                    <h5 className="t1">Talk with our team</h5>
                                    <button className="enq-btn" type="submit">Enquire</button>

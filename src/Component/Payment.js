@@ -8,7 +8,7 @@ import img4 from '../Assest/Images/payment.png'
 const Payment = () => {
     return (
         <div className="payment pt-3 pb-3">
-            <div className="contain-template back-g">
+            <div className="contain-template back-g paym-t1">
                 <div className="container">
                     <div className="row">
                         <div className="pay-cmn">

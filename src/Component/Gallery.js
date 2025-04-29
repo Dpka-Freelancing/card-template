@@ -9,7 +9,7 @@ import img4 from '../Assest/Images/gal-4.png'
 const Gallery = () => {
     return (
         <div className="gallery pt-3 pb-3">
-            <div className="contain-template back-g">
+            <div className="contain-template back-g galy-t1">
                 <div className="container">
                     <div className="row">
                         <div className="gal-cmn">

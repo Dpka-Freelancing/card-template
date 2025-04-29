@@ -1,0 +1,95 @@
+@media (min-width: 1199px) and (max-width: 1290px) {
+    .contain-template {
+        width: 33%;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1199px) {
+    .contain-template {
+        width: 47%;
+    }
+
+    .enq-sec h5.t1 {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 850px) {
+    .contain-template {
+        width: 53%;
+    }
+
+    .enq-sec h5.t1 {
+        font-size: 19px;
+        padding: 8px 0;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .contain-template {
+        width: 75%;
+    }
+}
+
+@media (min-width: 445px) and (max-width: 575px) {
+    .contain-template {
+        width: 85%;
+    }
+
+    .enq-sec h5.t1 {
+        font-size: 17px;
+        padding: 8px 0;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 445px) {
+    .contain-template {
+        width: 96%;
+    }
+
+    h1.t1 {
+        font-size: 44px !important;
+    }
+
+    .btn-a {
+        width: 130px;
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+
+    .share-btn button {
+        font-size: 14px;
+    }
+
+    .enq-sec h5.t1 {
+        font-size: 11px;
+        padding: 5px 5px;
+    }
+
+    .enq-sec button {
+        font-size: 12px;
+        padding: 1px 20px;
+
+    }
+
+    .ylw-btn {
+        width: 45% !important;
+        padding: 2px 20px;
+    }
+
+    h2.t1 {
+        font-size: 28px;
+    }
+
+    .pay1 .abt-det p {
+        font-size: 14px;
+    }
+
+    .heart-icon {
+        left: 33%;
+    }
+
+    .gallery-img {
+        grid-auto-rows: 140px;
+    }
+}

@@ -4,7 +4,7 @@ import { FaHeart, FaStar } from "react-icons/fa";
 const Feedback = () => {
     return (
         <div className="feedback pt-3 pb-3">
-            <div className="contain-template back-g">
+            <div className="contain-template back-g fedb-t1">
                 <div className="container">
                     <div className="row">
                         <div className="feed-cmn pb-5">
