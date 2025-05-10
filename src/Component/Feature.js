@@ -104,7 +104,7 @@ const Feature = () => {
                                 <img src={img18} alt="" class="img-fluid"  />
                                 <div className="enq-sec mt-5">
                                    <h5 className="t1">Talk with our team</h5>
-                                   <button className="enq-btn" type="submit">Enquire</button>
+                                   <a href="/feedback#efrm" className="enq-btn" type="submit">Enquire</a>
                                 </div>
                             </div>
 

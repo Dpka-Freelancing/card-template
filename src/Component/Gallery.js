@@ -12,29 +12,43 @@ const Gallery = () => {
             <div className="contain-template back-g galy-t1">
                 <div className="container">
                     <div className="row">
+
                         <div className="gal-cmn">
                             <div className='gal-head pb-3'>
                                 <h2 className='t1'>Gallery</h2>
                             </div>
-                            <div className="gallery-img">
-                                <div class="gallery-item wide"><img src={img1} alt="" className="img-fluid"/></div>
-
-                                <div class="gallery-item"><img src={img2} alt=""className="img-fluid" /></div>
-                                <div class="gallery-item"><img src={img3} alt="" className="img-fluid" /></div>
-
-                                <div class="gallery-item tall"><img src={img4} alt="" className="img-fluid" /></div>
-                                <div class="gallery-item"><img src={img3} alt="" className="img-fluid" /></div>
-
-                                <div class="gallery-item tall"><img src={img4} alt="" className="img-fluid" /></div>
-                                <div class="gallery-item"><img src={img3} alt="" className="img-fluid" /></div>
-                               
-                                <div class="gallery-item wide"><img src={img1} alt="" className="img-fluid"/></div>
 
 
-
-                            </div>
 
                         </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className="gallry-img pb-3">
+                                <img src={img2} className="img-fluid" alt=""/>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className="gallry-img pb-3">
+                                <img src={img2} className="img-fluid" alt=""/>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className="gallry-img pb-3">
+                                <img src={img2} className="img-fluid" alt=""/>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className="gallry-img pb-3">
+                                <img src={img2} className="img-fluid" alt=""/>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className="gallry-img pb-3">
+                                <img src={img2} className="img-fluid" alt=""/>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

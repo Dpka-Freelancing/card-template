@@ -58,7 +58,7 @@ const Feedback = () => {
                             </div>
                         </div>
 
-                        <div className="feed-cmn pt-5">
+                        <div className="feed-cmn pt-5" id="efrm">
                             <div className='feed-head pb-3'>
                                 <h1 className='t1'>Enquire Form</h1>
                             </div>
