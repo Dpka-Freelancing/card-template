@@ -16,6 +16,7 @@ import Feedback from "../Component/Feedback";
 import Copyrights from "../Component/Copyright";
 import Share from "../Component/Share-card";
 import Menubttm from "../Component/Menu";
+import Reviews from "../Component/Rating";
 
 
 
@@ -46,7 +47,7 @@ END:VCARD
     };
 
     return (
-        <div className="template-bg1 pt-3 pb-3" id="home">
+        <div className="template-bg1 pt-3 pb-2" id="home">
             <div className="v-template1">
                 <div className="contain-template back-g hm">
                     <div className="container">
@@ -89,7 +90,7 @@ END:VCARD
                             </div>
                             <div className="share-btn mt-4">
                                 <button type="button" className="sh-qr" onClick={handleAddToContact}>Add To Contact</button>
-                                <button type="submit" className="sve-qr">Save Card</button>
+                                
                             </div>
                             <div className="social-icon mt-5 mb-4">
                                 <i><FaYoutube /></i>
@@ -108,6 +109,7 @@ END:VCARD
             <div id="feature"><Feature /></div>
             <div id="payment"><Payment /></div>
             <div id="gallery"><Gallery /></div>
+            <div id="review"><Reviews /></div>
             <div id="feedback"><Feedback /></div>
             <div id="share"><Share /></div>
             <Copyrights />

@@ -22,7 +22,7 @@ import img18 from '../Assest/Images/Rectangle 24.png'
 
 const Feature = () => {
     return (
-        <div className="feature pt-3 pb-3">
+        <div className="feature pt-2 pb-2">
             <div className="contain-template back-g featu-t1">
                 <div className="container">
                     <div className="row">

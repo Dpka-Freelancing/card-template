@@ -11,7 +11,7 @@ import img8 from "../Assest/Images/Rectangle 24.png"
 
 const Product = () => {
     return (
-        <div className="product pt-3 pb-3">
+        <div className="product pt-2 pb-2">
             <div className="contain-template back-g prod-t1">
                 <div className="container">
                     <div className="row">

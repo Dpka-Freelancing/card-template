@@ -229,7 +229,12 @@
 .gallry-img {
   text-align: center;
 }
-
+.gallry-img img:hover {
+  transform: scale(1.09);
+}
+.gallry-img img {
+  transition:0.5s;
+}
 /* gallery component end */
 
 /* copy rights */
@@ -279,7 +284,7 @@
 
 .sh-qr,
 .sve-qr {
-  width: 49%;
+  width: 100%;
   padding: 6px;
   border-radius: 5px;
   border: none;
@@ -341,8 +346,7 @@ textarea {
 
 .star {
   text-align: left;
-  color: #EFC356;
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 15px;
 }
 
@@ -439,3 +443,31 @@ input[type="text"] {
 }
 /* share pop up end */
 
+/* rating */
+.review-card h3{
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+.review-card {
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 5px;
+}
+.stars {
+  color: #f5a623;
+}
+.review-card .header {
+  display: flex;
+  position: relative;
+}
+.date {
+  position: absolute;
+  right: 0;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+.load-more-button.ylw-btn,.hide-reviews-button.ylw-btn{
+  width: auto !important;
+}
+/* rating end */

@@ -2,7 +2,7 @@ import React from "react";
 
 const Copyrights = () =>{
     return(
-        <div className="copy pt-3 pb-5 mb-3">
+        <div className="copy pt-2 pb-5 mb-3">
              <div className="contain-template back-g ">
                 <div className="container">
                     <div className="row">

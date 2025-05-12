@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { FaFacebookF, FaTwitter, FaWhatsapp, FaTimes } from 'react-icons/fa';
-import img1 from '../Assest/Images/share-qr.png'
-
-
-
+import { QRCodeCanvas } from 'qrcode.react';
 
 
 const Share = () => {
     const [showPopup, setShowPopup] = useState(false);
     const shareUrl = window.location.href;
     const encodedUrl = encodeURIComponent(shareUrl);
+    const qrRef = useRef();
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(shareUrl)
@@ -17,8 +15,17 @@ const Share = () => {
             .catch(err => console.error('Copy failed:', err));
     };
 
+    const downloadQR = () => {
+        const canvas = qrRef.current.querySelector('canvas');
+        const url = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'qr-code.png';
+        a.click();
+    };
+
     return (
-        <div className="share pt-3 pb-3">
+        <div className="share pt-2 pb-2">
             <div className="contain-template back-g shar-t1">
                 <div className="container">
                     <div className="row">
@@ -33,13 +40,18 @@ const Share = () => {
                             </div>
                             <div className="share-qr pt-5 pb-5">
                                 <p>Scan below QR to open profile</p>
-                                <img src={img1} alt="QR Code" className="img-fluid" />
+                                <div ref={qrRef}>
+                                    <QRCodeCanvas value={shareUrl} size={200} includeMargin={true} />
+
+                                </div>
                             </div>
                             <div className="share-btn pb-4">
                                 <button type="button" className="sh-qr" onClick={() => setShowPopup(true)}>
                                     Share
                                 </button>
-                                <button type="button" className="sve-qr">Save QR</button>
+                                <button type="button" className="sve-qr" onClick={downloadQR}>
+                                    Save QR
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -78,6 +90,4 @@ const Share = () => {
     );
 };
 
-
-
-export default Share
+export default Share;

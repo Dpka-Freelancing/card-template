@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaHeart, FaStar } from "react-icons/fa";
 
 const Feedback = () => {
+    const [rating, setRating] = useState(0); // State to store selected rating
+
     return (
-        <div className="feedback pt-3 pb-3">
+        <div className="feedback pt-2 pb-2">
             <div className="contain-template back-g fedb-t1">
                 <div className="container">
                     <div className="row">
@@ -12,49 +14,44 @@ const Feedback = () => {
                                 <h2 className='t1'>FeedBack</h2>
                             </div>
                             <div className="feed-form">
-                                
-                                    <div className="feed-head">
-                                        <h6 className="t1">Share your Throughts </h6>
+                                <div className="feed-head">
+                                    <h6 className="t1">Share your Thoughts</h6>
+                                </div>
+                                <div className="feed-form1">
+                                    <h6 className="t1">Give Star</h6>
+                                    <div className="star">
+                                        {[1, 2, 3, 4, 5].map((star) => (
+                                            <FaStar
+                                                key={star}
+                                                onClick={() => setRating(star)}
+                                                style={{ cursor: "pointer", color: star <= rating ? "gold" : "white" }}
+                                            />
+                                        ))}
                                     </div>
-                                    <div className="feed-form1">
-                                        <h6 className="t1">Give Star </h6>
-                                        <div className="star">
-                                        <FaStar />
-                                        <FaStar />
-                                        <FaStar />
-                                        <FaStar />
-                                        <FaStar />
+                                    <form className="form-des" >
+                                        <div className="row">
+                                            <input
+                                                type="text"
+                                                name="username"
+                                                placeholder="Name"
+                                            />
                                         </div>
-                                        <form className="form-des" >
-                                            <div className="row">
-                                                <input
-                                                    type="text"
-                                                    name="username"
-                                                    placeholder="Name"
-                                                    
-                                                />
-                                            </div>
-                                            <br/>
-
-                                            <div className="row">
-                                               
-                                                <textarea
-                                                    name="message"
-                                                    placeholder="Message"
-                                                />
-                                            </div>
-                                            <br />
-                                            <div className="row">
+                                        <br />
+                                        <div className="row">
+                                            <textarea
+                                                name="message"
+                                                placeholder="Message"
+                                            />
+                                        </div>
+                                        <br />
+                                        <div className="row">
                                             <button type="submit" className="ylw-btn">Submit</button>
-
-                                            </div>
-
-                                        </form>
-                                        <div className="heart-icon">
-                                        <FaHeart />
                                         </div>
+                                    </form>
+                                    <div className="heart-icon">
+                                        <FaHeart />
                                     </div>
-                               
+                                </div>
                             </div>
                         </div>
 
@@ -63,76 +60,65 @@ const Feedback = () => {
                                 <h1 className='t1'>Enquire Form</h1>
                             </div>
                             <div className="feed-form">
-                                
-                                    <div className="feed-head">
-                                        <h6 className="t1 mb-2">Share your Throughts </h6>
-                                    </div>
-                                    <div className="feed-form1 ">
-                                       
-                                        <form className="form-des pt-3" >
-                                            <div className="row">
-                                                <input
-                                                    type="text"
-                                                    name="username"
-                                                    placeholder="Name"
-                                                    
-                                                />
-                                            </div>
-                                            <br/>
-                                            <div className="row">
-                                                <input
-                                                    type="text"
-                                                    name=""
-                                                    placeholder="Business Name"
-                                                    
-                                                />
-                                            </div>
-                                            <br/>
-                                            <div className="row">
-                                                <input
-                                                    type="text"
-                                                    name=""
-                                                    placeholder="Email Address"
-                                                    
-                                                />
-                                            </div>
-                                            <br/>
-                                            <div className="row">
-                                                <input
-                                                    type="text"
-                                                    name=""
-                                                    placeholder="Phone Number"
-                                                    
-                                                />
-                                            </div>
-                                            <br/>
-                                            <div className="row">
-                                               
-                                                <textarea
-                                                    name="message"
-                                                    placeholder="Message"
-                                                />
-                                            </div>
-                                            <br />
-
-
-                                            <div className="row">
-                                            <button type="submit" className="ylw-btn">Submit</button>
-
-                                            </div>
-
-                                        </form>
-                                        <div className="heart-icon">
-                                        <FaHeart />
+                                <div className="feed-head">
+                                    <h6 className="t1 mb-2">Share your Thoughts</h6>
+                                </div>
+                                <div className="feed-form1">
+                                    <form className="form-des pt-3">
+                                        <div className="row">
+                                            <input
+                                                type="text"
+                                                name="username"
+                                                placeholder="Name"
+                                            />
                                         </div>
+                                        <br />
+                                        <div className="row">
+                                            <input
+                                                type="text"
+                                                name="business"
+                                                placeholder="Business Name"
+                                            />
+                                        </div>
+                                        <br />
+                                        <div className="row">
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                placeholder="Email Address"
+                                            />
+                                        </div>
+                                        <br />
+                                        <div className="row">
+                                            <input
+                                                type="text"
+                                                name="phone"
+                                                placeholder="Phone Number"
+                                            />
+                                        </div>
+                                        <br />
+                                        <div className="row">
+                                            <textarea
+                                                name="message"
+                                                placeholder="Message"
+                                            />
+                                        </div>
+                                        <br />
+                                        <div className="row">
+                                            <button type="submit" className="ylw-btn">Submit</button>
+                                        </div>
+                                    </form>
+                                    <div className="heart-icon">
+                                        <FaHeart />
                                     </div>
-                               
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
-export default Feedback
+
+export default Feedback;
