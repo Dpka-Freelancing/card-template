@@ -2,7 +2,7 @@ import React from "react";
 
 import { FaFlag, FaYoutube, FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { RiGlobeFill, RiMailCheckFill } from "react-icons/ri";
-import { MdCall, MdOutlineAirlineSeatLegroomReduced } from "react-icons/md";
+import { MdCall } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 
 import logo from "../Assest/Images/logo1.png"
@@ -17,6 +17,9 @@ import Copyrights from "../Component/Copyright";
 import Share from "../Component/Share-card";
 import Menubttm from "../Component/Menu";
 import Reviews from "../Component/Rating";
+
+import img1 from '../Assest/Images/bg/Blob-4.png'
+import img2 from '../Assest/Images/bg/Blob-7.png'
 
 
 
@@ -48,6 +51,8 @@ END:VCARD
 
     return (
         <div className="template-bg1 pt-3 pb-2" id="home">
+            <img src={img2} alt="Blob 7" className="blob blob-top" />
+             <img src={img1} alt="Blob 4" className="blob blob-bottom" />
             <div className="v-template1">
                 <div className="contain-template back-g hm">
                     <div className="container">

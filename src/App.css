@@ -66,10 +66,41 @@ h6.t1{
   font-weight: 600;
 }
 
-.template-bg1{
+.template-bg1 {
   background-color: #000;
+  height: 100vh;
+  overflow: scroll;
 }
- 
+
+.blob {
+  position: absolute;
+  height: auto;
+  z-index: 0;
+  animation: bounce 4s ease-in-out infinite;
+}
+
+.blob-top {
+  top: -19px;
+  right: 0px;
+}
+
+.blob-bottom {
+  bottom: 0;
+  left: 0;
+  animation-delay: 2s;
+  width: 275px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px); /* Adjust the bounce height */
+  }
+}
+
+
 .abt-head, .prod-head, .pay-head, .gal-head, .feed-head.pb-3, .share-head
  {
   text-align: center;
