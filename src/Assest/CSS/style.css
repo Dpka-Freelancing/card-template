@@ -24,7 +24,8 @@
   border-radius: 50px;
   margin: auto;
   text-align: center;
-
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 3px 3px 6px 0px #a9a3a3;
 }
 
 .temp-hme.btn1 {
@@ -61,7 +62,26 @@
 .social-icon i {
   padding: 5px 10px;
 }
+.btn-a:hover {
+  background: #000;
+}
+.btn-a:hover a.navi-a {
+  color: #fff !important;
+}
 
+/* social icon */
+.you-tube:hover {
+  color: red !important;
+}
+.linked-in:hover {
+  color: blue !important;
+}
+.insta:hover {
+  color: orange !important;
+}
+.facebook:hover {
+  color: blue !important;
+}
 /* home component t1 end */
 
 /* about component css */
@@ -472,3 +492,10 @@ input[type="text"] {
 }
 /* rating end */
 
+/* map */
+iframe {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 7px;
+}
+/* map end */

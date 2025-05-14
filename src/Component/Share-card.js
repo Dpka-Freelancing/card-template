@@ -54,6 +54,16 @@ const Share = () => {
                                 </button>
                             </div>
                         </div>
+
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0197704994483!2d-122.41941538468148!3d37.77492977975909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b7c9dff%3A0x5e262e0b56c37a20!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1588017366922!5m2!1sen!2sus"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,15 +78,15 @@ const Share = () => {
                         <h3>Share via</h3>
                         <div className="social-icons">
                             <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
-                               target="_blank" rel="noopener noreferrer">
+                                target="_blank" rel="noopener noreferrer">
                                 <FaFacebookF className="icon facebook" />
                             </a>
                             <a href={`https://twitter.com/intent/tweet?url=${encodedUrl}`}
-                               target="_blank" rel="noopener noreferrer">
+                                target="_blank" rel="noopener noreferrer">
                                 <FaTwitter className="icon twitter" />
                             </a>
                             <a href={`https://wa.me/?text=${encodedUrl}`}
-                               target="_blank" rel="noopener noreferrer">
+                                target="_blank" rel="noopener noreferrer">
                                 <FaWhatsapp className="icon whatsapp" />
                             </a>
                         </div>
@@ -86,6 +96,9 @@ const Share = () => {
                     </div>
                 </div>
             )}
+
+
+
         </div>
     );
 };

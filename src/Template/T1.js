@@ -98,11 +98,11 @@ END:VCARD
                                 
                             </div>
                             <div className="social-icon mt-5 mb-4">
-                                <i><FaYoutube /></i>
-                                <i><FaLinkedinIn /></i>
-                                <i><FaInstagram /></i>
-                                <i><FaFacebookF /></i>
-                                <i><FaXTwitter /></i>
+                                <a href="" className="you-tube"><i><FaYoutube /></i></a>
+                                <a href="" className="linked-in"><i><FaLinkedinIn /></i></a>
+                                <a href="" className="insta"><i><FaInstagram /></i></a>
+                                <a href="" className="facebook"><i><FaFacebookF /></i></a>
+                                <a href="" className="twiter"><i><FaXTwitter /></i></a>
                             </div>
                         </div>
                     </div>
