@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import { FaHeart, FaStar } from "react-icons/fa";
 
-const Feedback = () => {
+const Feedback = ({ bckgnd,fnts }) => {
     const [rating, setRating] = useState(0); // State to store selected rating
 
     return (
         <div className="feedback pt-2 pb-2">
-            <div className="contain-template back-g fedb-t1">
+            <div className={`contain-template ${bckgnd}  fedb-t1 bg `}>
                 <div className="container">
                     <div className="row">
                         <div className="feed-cmn pb-5">
                             <div className='feed-head pb-3'>
-                                <h2 className='t1'>FeedBack</h2>
+                                <h2 className={`${fnts}`}>FeedBack</h2>
                             </div>
                             <div className="feed-form">
                                 <div className="feed-head">
-                                    <h6 className="t1">Share your Thoughts</h6>
+                                    <h6 className={`${fnts}`}>Share your Thoughts</h6>
                                 </div>
                                 <div className="feed-form1">
-                                    <h6 className="t1">Give Star</h6>
+                                    <h6 className={`${fnts}`}>Give Star</h6>
                                     <div className="star">
                                         {[1, 2, 3, 4, 5].map((star) => (
                                             <FaStar
                                                 key={star}
                                                 onClick={() => setRating(star)}
-                                                style={{ cursor: "pointer", color: star <= rating ? "gold" : "white" }}
+                                                style={{ cursor: "pointer", color: star <= rating ? "#FFB700" : "white" }}
                                             />
                                         ))}
                                     </div>
@@ -57,14 +57,14 @@ const Feedback = () => {
 
                         <div className="feed-cmn pt-5" id="efrm">
                             <div className='feed-head pb-3'>
-                                <h1 className='t1'>Enquire Form</h1>
+                                <h2 className={`${fnts}`}>Enquire Form</h2>
                             </div>
                             <div className="feed-form">
                                 <div className="feed-head">
-                                    <h6 className="t1 mb-2">Share your Thoughts</h6>
+                                    <h6 className={`${fnts} mb-2` }>Share your Thoughts</h6>
                                 </div>
                                 <div className="feed-form1">
-                                    <form className="form-des pt-3">
+                                    <form className="form-des">
                                         <div className="row">
                                             <input
                                                 type="text"

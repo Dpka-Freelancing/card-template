@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaWhatsapp, FaTimes } from 'react-icons/fa';
 import { QRCodeCanvas } from 'qrcode.react';
 
 
-const Share = () => {
+const Share = ({ bckgnd, fnts }) => {
     const [showPopup, setShowPopup] = useState(false);
     const shareUrl = window.location.href;
     const encodedUrl = encodeURIComponent(shareUrl);
@@ -26,12 +26,12 @@ const Share = () => {
 
     return (
         <div className="share pt-2 pb-2">
-            <div className="contain-template back-g shar-t1">
+        <div className={`contain-template  ${bckgnd}  shar-t1`}>
                 <div className="container">
                     <div className="row">
                         <div className="share-cmn">
                             <div className='share-head pb-3'>
-                                <h2 className='t1'>Share Card</h2>
+                                <h2 className={`${fnts}`}>Share Card</h2>
                             </div>
                             <div className="share-url">
                                 <div className="url-bx">
@@ -45,7 +45,7 @@ const Share = () => {
 
                                 </div>
                             </div>
-                            <div className="share-btn pb-4">
+                            <div className={`share-btn ${fnts} pb-4`}>
                                 <button type="button" className="sh-qr" onClick={() => setShowPopup(true)}>
                                     Share
                                 </button>

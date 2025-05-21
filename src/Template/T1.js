@@ -23,7 +23,7 @@ import img2 from '../Assest/Images/bg/Blob-7.png'
 
 
 
-const T1 = ({ phone, whatsapp, locationUrl }) => {
+const T1 = ({ phone, whatsapp, locationUrl, theme = "template-bg1", page = "hm", bckgnd = "back-g", fnts="t1" }) => {
 
     const handleAddToContact = () => {
         const vcfContent = `
@@ -50,11 +50,11 @@ END:VCARD
     };
 
     return (
-        <div className="template-bg1 pt-3 pb-2" id="home">
+        <div className={`template-bg  pt-3 pb-2 ${theme}`} id="home">
             <img src={img2} alt="Blob 7" className="blob blob-top" />
-             <img src={img1} alt="Blob 4" className="blob blob-bottom" />
+            <img src={img1} alt="Blob 4" className="blob blob-bottom" />
             <div className="v-template1">
-                <div className="contain-template back-g hm">
+                <div className={`contain-template ${bckgnd} ${page} `}>
                     <div className="container">
                         <div className="row">
                             <div className="logo-t1">
@@ -95,7 +95,7 @@ END:VCARD
                             </div>
                             <div className="share-btn mt-4">
                                 <button type="button" className="sh-qr" onClick={handleAddToContact}>Add To Contact</button>
-                                
+
                             </div>
                             <div className="social-icon mt-5 mb-4">
                                 <a href="" className="you-tube"><i><FaYoutube /></i></a>
@@ -109,15 +109,16 @@ END:VCARD
                 </div>
             </div>
 
-            <div id="about"><About /></div>
-            <div id="product"><Product /></div>
-            <div id="feature"><Feature /></div>
-            <div id="payment"><Payment /></div>
-            <div id="gallery"><Gallery /></div>
-            <div id="review"><Reviews /></div>
-            <div id="feedback"><Feedback /></div>
-            <div id="share"><Share /></div>
-            <Copyrights />
+
+            <div id="about"><About bckgnd={bckgnd} fnts={fnts} /></div>
+            <div id="product"><Product bckgnd={bckgnd} fnts={fnts} /></div>
+            <div id="feature"><Feature bckgnd={bckgnd} fnts={fnts} /></div>
+            <div id="gallery"><Gallery bckgnd={bckgnd} fnts={fnts} /></div>
+            <div id="payment"><Payment bckgnd={bckgnd} fnts={fnts} /></div>
+            <div id="review"><Reviews bckgnd={bckgnd} fnts={fnts} /></div>
+            <div id="feedback"><Feedback bckgnd={bckgnd} fnts={fnts} /></div>
+            <div id="share"><Share bckgnd={bckgnd} fnts={fnts} /></div>
+            <Copyrights bckgnd={bckgnd} fnts={fnts} />
             <Menubttm />
         </div>
     );

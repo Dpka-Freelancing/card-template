@@ -4,10 +4,10 @@ import { AiFillProduct } from "react-icons/ai";
 import { MdFeaturedPlayList, MdPayments } from "react-icons/md";
 import { RiGalleryFill, RiFeedbackFill } from "react-icons/ri";
 
-const Menubttm = () => {
+const Menubttm = ({fnts}) => {
     return (
         <div className="Menu-card">
-            <div className="contain-template bottom-menu">
+            <div className={`contain-template bottom-menu ${fnts}`}>
                 <div className="container">
                     <div className="row">
                         <div className="m-icons">

@@ -1,9 +1,9 @@
 import React from "react";
 
-const Copyrights = () =>{
+const Copyrights = ({ bckgnd }) =>{
     return(
         <div className="copy pt-2 pb-5 mb-3">
-             <div className="contain-template back-g ">
+        <div className={`contain-template  ${bckgnd} `}>
                 <div className="container">
                     <div className="row">
                         <div className="copy-cmn">

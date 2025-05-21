@@ -1,6 +1,8 @@
 /* fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -13,10 +15,14 @@ html, body {
   width: 30%;
   margin: 0 auto;
   padding: 1rem;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   border-radius: 5px;
   z-index: 10;
   position: relative;
+}
+
+.back-g {
+  background: #f9f9f9;
 }
 
 a {
@@ -71,41 +77,18 @@ h6.t1{
   font-weight: 600;
 }
 
-.template-bg1 {
-  background-color: #000;
+.template-bg {
+  
   height: 100vh;
   overflow: scroll;
    overflow: auto;
   -ms-overflow-style: none; 
   scrollbar-width: none;
+  background-color: #000;
 }
 
-.blob {
-  position: absolute;
-  height: auto;
-  z-index: 0;
-  animation: bounce 4s ease-in-out infinite;
-}
-
-.blob-top {
-  top: -19px;
-  right: 0px;
-}
-
-.blob-bottom {
-  bottom: 0;
-  left: 0;
-  animation-delay: 2s;
-  width: 275px;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(20px); /* Adjust the bounce height */
-  }
+canvas {
+  border-radius: 15px;
 }
 
 
@@ -131,3 +114,10 @@ textarea{
   font-weight: 600;
   box-shadow: 0px 3px 3px 2px #ccc;
 }
+
+
+
+
+/* Common styles */
+
+
