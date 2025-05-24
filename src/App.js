@@ -13,8 +13,8 @@ import { contactInfo } from "./Template/Config";
 function App() {
   return (
     <div>
-    {/* <T1 {...contactInfo} /> */}
-    <T2 {...contactInfo} />
+    <T1 {...contactInfo} />
+    {/* <T2 {...contactInfo} /> */}
     {/* <T3 {...contactInfo} /> */}
 
 

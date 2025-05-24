@@ -2,8 +2,7 @@ import React, { useState, useRef } from 'react';
 import { FaFacebookF, FaTwitter, FaWhatsapp, FaTimes } from 'react-icons/fa';
 import { QRCodeCanvas } from 'qrcode.react';
 
-
-const Share = ({ bckgnd, fnts }) => {
+const Share = ({ bckgnd, fnts, content }) => {
     const [showPopup, setShowPopup] = useState(false);
     const shareUrl = window.location.href;
     const encodedUrl = encodeURIComponent(shareUrl);
@@ -26,7 +25,7 @@ const Share = ({ bckgnd, fnts }) => {
 
     return (
         <div className="share pt-2 pb-2">
-        <div className={`contain-template  ${bckgnd}  shar-t1`}>
+            <div className={`contain-template ${bckgnd} shar-t1`}>
                 <div className="container">
                     <div className="row">
                         <div className="share-cmn">
@@ -42,7 +41,6 @@ const Share = ({ bckgnd, fnts }) => {
                                 <p>Scan below QR to open profile</p>
                                 <div ref={qrRef}>
                                     <QRCodeCanvas value={shareUrl} size={200} includeMargin={true} />
-
                                 </div>
                             </div>
                             <div className={`share-btn ${fnts} pb-4`}>
@@ -55,14 +53,13 @@ const Share = ({ bckgnd, fnts }) => {
                             </div>
                         </div>
 
-                        <div class="map-container">
+                        <div className="map-container">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0197704994483!2d-122.41941538468148!3d37.77492977975909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b7c9dff%3A0x5e262e0b56c37a20!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1588017366922!5m2!1sen!2sus"
-                                allowfullscreen=""
+                                src={content.mapUrl}
+                                allowFullScreen=""
                                 loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
+                                referrerPolicy="no-referrer-when-downgrade">
                             </iframe>
-                            
                         </div>
                     </div>
                 </div>
@@ -81,11 +78,11 @@ const Share = ({ bckgnd, fnts }) => {
                                 target="_blank" rel="noopener noreferrer">
                                 <FaFacebookF className="icon facebook" />
                             </a>
-                            <a href={`https://twitter.com/intent/tweet?url=${encodedUrl}`}
+                            <a href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodeURIComponent(content.shareText)}`}
                                 target="_blank" rel="noopener noreferrer">
                                 <FaTwitter className="icon twitter" />
                             </a>
-                            <a href={`https://wa.me/?text=${encodedUrl}`}
+                            <a href={`https://wa.me/?text=${encodeURIComponent(content.shareText + ' ' + shareUrl)}`}
                                 target="_blank" rel="noopener noreferrer">
                                 <FaWhatsapp className="icon whatsapp" />
                             </a>
@@ -96,9 +93,6 @@ const Share = ({ bckgnd, fnts }) => {
                     </div>
                 </div>
             )}
-
-
-
         </div>
     );
 };

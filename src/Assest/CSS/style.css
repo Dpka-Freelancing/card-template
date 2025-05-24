@@ -6,7 +6,7 @@
 }
 
 .logo-t1 {
-  background: #D6EBDC;
+  background: #2e4335;
   width: auto;
   top: 16px;
   border-radius: 0 00px 90px 90px;
@@ -274,6 +274,44 @@
 
 .pay-img {
   text-align: center;
+}
+
+/* Phone link styling */
+.phone-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.phone-link:hover, 
+.phone-link:focus {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+/* Visual feedback for clickable elements */
+.abt-det .value a, 
+.upi-button {
+  cursor: pointer;
+  position: relative;
+}
+
+.abt-det .value a:after, 
+.upi-button:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+.abt-det .value a:hover:after, 
+.upi-button:hover:after {
+  transform: scaleX(1);
 }
 
 /* payment component end */
@@ -869,7 +907,7 @@ iframe {
   padding-right: 10px;
 }
 .kfeature h6.t3, .kfeature {
-  color: #fff;
+  /* color: #fff; */
   font-family: "Poppins", sans-serif;
 }
 .enq-sec h5.t3 {
