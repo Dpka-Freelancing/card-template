@@ -20,7 +20,7 @@ import Reviews from "../Component/Rating";
 
 
 
-const T3 = ({ phone, whatsapp, locationUrl, theme = "template-bg3", page = "hm-t3", bckgnd = "back-g-t3", fnts = "t3" }) => {
+const T5 = ({ phone, whatsapp, locationUrl, theme = "template-bg5", page = "hm-t5", bckgnd = "back-g-t5", fnts = "t5" }) => {
 
     const handleAddToContact = () => {
         const vcfContent = `
@@ -108,4 +108,4 @@ END:VCARD
     );
 };
 
-export default T3
+export default T5
