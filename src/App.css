@@ -115,9 +115,43 @@ textarea{
   box-shadow: 0px 3px 3px 2px #ccc;
 }
 
-
-
-
+/* marign for all heder */
+.back-g.paym-t1 .pay-head, .back-g.fedb-t1 .feed-head,.back-g.shar-t1 .share-head, .back-g.galy-t1 .gal-head, .back-g.prod-t1 .prod-head.pb-3 {
+  margin-bottom: 0;
+}
+/* payment */
+.google-pay {
+  text-wrap: nowrap;
+  color: #fff;
+  background: #3A81F1;
+}
+.google-pay:hover{
+  color: #3A81F1;
+  background: #fff;
+  border: 1px solid  #3A81F1;
+}
+.phonepe {
+  background: #5f259f;
+  color: #fff;
+}
+.phonepe:hover{
+  background: #fff;
+  color:#5f259f ;
+  border: 1px solid #5f259f;
+}
+textarea {
+  border: none !important;
+  border-radius: 15px;
+}
+.paytm {
+  background: #00B9F1;
+  color: #fff;
+}
+.payment-button.paytm:hover {
+  background: #fff;
+  color: #00B9F1;
+  border: 1px solid #00B9F1;
+}
 /* Common styles */
 
 

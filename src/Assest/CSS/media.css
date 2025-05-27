@@ -1,6 +1,22 @@
+@media (min-width: 1290px) and (max-width: 1430px) {
+    .contain-template {
+        width: 35%;
+    }
+}
+
 @media (min-width: 1199px) and (max-width: 1290px) {
     .contain-template {
-        width: 33%;
+        width: 35%;
+    }
+}
+
+@media (min-width: 1199px) and (max-width: 1260px) {
+    .enq-sec h5.t1 {
+        font-size: 21px;
+    }
+
+    .pay1 .abt-det p {
+        font-size: 15px;
     }
 }
 
@@ -11,6 +27,15 @@
 
     .enq-sec h5.t1 {
         font-size: 19px;
+    }
+
+    .pay1 .abt-det p {
+        font-size: 14px;
+    }
+
+    h2.t1,
+    h1.t1 {
+        font-size: 26px;
     }
 }
 
@@ -23,6 +48,11 @@
         font-size: 19px;
         padding: 8px 0;
     }
+
+    h2.t1,
+    h1.t1 {
+        font-size: 26px;
+    }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
@@ -33,18 +63,124 @@
 
 @media (min-width: 445px) and (max-width: 575px) {
     .contain-template {
-        width: 85%;
+        width: 100%;
+    }
+
+    .blob.blob-top,
+    .blob.blob-bottom {
+        display: none;
     }
 
     .enq-sec h5.t1 {
-        font-size: 17px;
+        font-size: 20px;
         padding: 8px 0;
+    }
+
+    .payment-button {
+        padding: 8px 9px;
+    }
+
+    .template-bg {
+        padding-top: 0 !important;
+    }
+
+    .mble-2clm {
+        width: 50%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 390px) {
+    .payment-button {
+        padding: 8px 9px;
+    }
+
+    .abt-det {
+        column-gap: 0;
+    }
+
+    .mble-2clm {
+        width: 50%;
+    }
+
+
+
+}
+
+@media (min-width: 300px) and (max-width: 375px) {
+    .enq-sec h5.t1 {
+        font-size: 12px !important;
+        padding: 4px 5px !important;
+    }
+
+    .m-icons a {
+        padding: 7px 12px;
+        margin-right: 0px;
+    }
+
+    .ylw-btn {
+        font-size: 13px;
     }
 }
 
 @media (min-width: 300px) and (max-width: 445px) {
+    .social-icon.t2 a i {
+        font-size: 35px;
+        padding: 9px 10px;
+        margin: 0px 3px;
+    }
+
+    .share-head h2.t3, .feed-cmn h2.t3, .feed-head h2.t3, .pay-head h2.t3, .gal-head h2.t3, .abt-head h2.t3, .prod-head h2.t3 {
+  font-size: 24px;
+    }
+
+    .abt-head h2.t2,
+    .prod-head h2.t2,
+    .gal-head h2.t2,
+    .pay-head h2.t2,
+    .feed-head h2.t2,
+    .share-head h2.t2,
+    .feed-head h2.t2 {
+        font-size: 24px;
+    }
+
+    .ylw-btn {
+        padding: 12px 20px;
+    }
+
+    .share-btn.t2 button.sh-qr.hme.t2 {
+        padding: 10px;
+        font-size: 21px;
+    }
+
+    .blob.blob-top,
+    .blob.blob-bottom {
+        display: none;
+    }
+
+    .gallery-btn.t1 {
+        font-size: 13px;
+    }
+
+    .magnify-icon {
+        font-size: 2rem;
+    }
+
     .contain-template {
-        width: 96%;
+        width: 100%;
+    }
+
+    .mble-2clm {
+        width: 50%;
+    }
+
+
+
+    .payment-button {
+        padding: 8px 9px;
+    }
+
+    .abt-det {
+        column-gap: 0;
     }
 
     h1.t1 {
@@ -62,24 +198,25 @@
     }
 
     .enq-sec h5.t1 {
-        font-size: 11px;
-        padding: 5px 5px;
+        font-size: 18px;
+        padding: 0px 5px;
     }
 
     .enq-sec a {
         font-size: 12px;
-        padding: 1px 20px;
+        padding: 1px 13px;
 
     }
 
     .ylw-btn {
-        width: 45% !important;
         padding: 2px 20px;
     }
 
     h2.t1 {
-        font-size: 28px;
+        font-size: 25px;
+
     }
+
 
     .pay1 .abt-det p {
         font-size: 14px;
@@ -91,5 +228,9 @@
 
     .gallery-img {
         grid-auto-rows: 140px;
+    }
+
+    .template-bg {
+        padding-top: 0 !important;
     }
 }
