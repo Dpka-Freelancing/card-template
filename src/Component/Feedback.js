@@ -173,7 +173,7 @@ const handleEnquireSubmit = async (e) => {
                                              submissionStatus.feedback === 'error' ? 'Try Again' : 'Submit Feedback'}
                                         </button>
                                         {submissionStatus.feedback === 'success' && (
-                                            <p className="success-message">Your feedback has been submitted!</p>
+                                            <p className="success-message">Your feedback has been submitted!!</p>
                                         )}
                                         {submissionStatus.feedback === 'error' && (
                                             <p className="error-message">Submission failed. Please try again.</p>
