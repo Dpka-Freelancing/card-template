@@ -152,6 +152,13 @@ textarea {
   color: #00B9F1;
   border: 1px solid #00B9F1;
 }
+.gal-btn {
+  text-align: center;
+ padding: 7px 11px;
+  border: none;
+  border-radius: 50px;
+
+}
 /* Common styles */
 
 

@@ -253,17 +253,19 @@
   background-repeat: no-repeat;
   background-position: left 1%, right;
 }
- .payment-button {
-          display: inline-flex;
-          align-items: center;
-          border: 1px solid #ddd;
-          border-radius: 24px;
-          padding: 8px 16px;
-          margin-left: 8px;
-          font-weight: 500;
-          cursor: pointer;
-          transition: all 0.2s;
-        }
+
+.payment-button {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  padding: 8px 16px;
+  margin-left: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
 .payment-temp.t1 {
   display: flex;
 }
@@ -327,10 +329,12 @@
   transition: 0.5s;
   height: 130px;
 }
+
 .gallry-img.video img {
   width: 100%;
   height: 100%;
 }
+
 .img-fluid.dot {
   width: 100%;
 }
@@ -338,13 +342,15 @@
 .gallry-img img:hover {
   transform: scale(1.05);
 }
+
 .gallry-img.video.mb-3 {
   height: 90%;
   border-radius: 25px;
 }
+
 /* Overlay on hover */
 .image-overlay {
- position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -359,6 +365,7 @@
 .gallry-img:hover .image-overlay {
   opacity: 1;
 }
+
 .gal-btn.t1 {
   text-align: center;
   margin-bottom: 20px;
@@ -367,7 +374,7 @@
 /* Magnifying icon */
 .magnify-icon {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
@@ -784,12 +791,15 @@ iframe {
 .back-g-t2 {
   background: #EFC356;
 }
+
 .back-g-t2.fedb-t1.bg .feed-form {
   margin-top: 100px;
 }
+
 .gal-btn.t2 {
   text-align: center;
 }
+
 button.gallery-btn.t2 {
   background: #1A82AC;
   box-shadow: none;
@@ -800,9 +810,11 @@ button.gallery-btn.t2 {
   border: none;
   font-family: "Lato", sans-serif;
 }
+
 .payment-temp.t2 {
   display: flex;
 }
+
 .abt-head h2.t2,
 .prod-head h2.t2,
 .gal-head h2.t2,
@@ -893,7 +905,7 @@ button.gallery-btn.t2 {
 
 .back-g-t2.fedb-t1 .ylw-btn {
   background: #1A82AC;
-box-shadow: none;
+  box-shadow: none;
 }
 
 .back-g-t2.fedb-t1 {
@@ -1033,19 +1045,24 @@ box-shadow: none;
   background: #A30239;
   border: none;
   color: #fff;
-padding: 8px 10px;
+  padding: 8px 10px;
   border-radius: 50px;
   font-family: "Poppins", sans-serif;
 }
+
 .gal-btn.t3 {
   text-align: center;
 }
+
 .payment-temp.t3 {
   display: flex;
 }
-.back-g-t3.paym-t1 .upi-id-display p, .back-g-t3.paym-t1 .upi-id-display h6 {
+
+.back-g-t3.paym-t1 .upi-id-display p,
+.back-g-t3.paym-t1 .upi-id-display h6 {
   color: #000;
 }
+
 /* t3 start */
 .share-head h2.t3,
 .feed-cmn h2.t3,
@@ -1247,13 +1264,21 @@ textarea {
 
 /* t3 end */
 /* ------------------------------------------------------------------------------------------------------------------- */
+.back-g-t4.abt-t1 {
+  background-image: url('../Images/bg/t4/boba-full.png'), url('../Images/bg/t4/boba-1.png');
+  background-repeat: no-repeat;
+  background-position: left 9%, right 95%;
+  background-size: 40%;
+}
 /* t4 start */
 .payment-temp.t4 {
   display: flex;
 }
+
 .gal-btn.t4 {
   text-align: center;
 }
+
 .gallery-btn.t4 {
   background: #D4A476;
   border: none;
@@ -1263,6 +1288,11 @@ textarea {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
+
+.back-g-t4.fedb-t1 .ylw-btn {
+  box-shadow: none;
+}
+
 .back-g-t4.shar-t1 {
   background-image: url('../Images/bg/t4/boba-1.png');
   background-repeat: no-repeat;
@@ -1319,13 +1349,13 @@ textarea {
 
 .back-g-t4.fedb-t1.bg .form-des input,
 textarea {
-  background: rgba(108, 82, 51, 0.1);
+  background: rgba(108, 82, 51, 0.1) !important;
   font-family: "Poppins", sans-serif;
 }
 
 .back-g-t4.fedb-t1 .ylw-btn {
   background: #D4A476;
-  box-shadow: 1px 2px 3px;
+  box-shadow: none;
 }
 
 .back-g-t4.fedb-t1,
@@ -1401,4 +1431,117 @@ textarea {
   background: #FFF1D1;
 }
 
+.back-g-t5.shar-t1 {
+  background-image: url('../Images/bg/t5/bg-1.png');
+  background-repeat: no-repeat;
+  background-position: right 60%;
+}
+
+.back-g-t5.shar-t1 .share-head,
+.back-g-t5.fedb-t1 .feed-head,
+.back-g-t5.paym-t1 .pay-head,
+.back-g-t5.t5.galy-t1 .gal-head,
+.back-g-t5.galy-t1 .gal-head,
+.back-g-t5.prod-t1 .prod-head {
+  margin-bottom: 0;
+}
+
+.share-head h2.t5,
+.feed-head h2.t5,
+.back-g-t5.paym-t1 h2.t5,
+.gal-head h2.t5 ,
+.prod-head h2.t5,
+.abt-head h2.t5{
+  font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.4);
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.back-g-t5.fedb-t1.bg button,
+.back-g-t5.fedb-t1 .load-more-button.ylw-btn {
+  background: #A30239;
+  box-shadow: none;
+}
+
+.feed-head h6.t5,
+.feed-form1 h6.t5,
+.pay1 h6.t5 {
+  font-family: "Poppins", sans-serif;
+}
+
+.back-g-t5.fedb-t1.bg {
+  background-image: url('../Images/bg/t5/image\ 13.png'), url('../Images/bg/t5/image\ 18.png');
+  background-repeat: no-repeat;
+  background-position: right 10%, left 80%;
+}
+
+.payment-temp {
+  display: flex;
+}
+
+.back-g-t5.fedb-t1, .back-g-t5.featu-t1 {
+  background-image: url('../Images/bg/t5/image\ 14.png');
+  background-repeat: no-repeat;
+  background-position: right 47%;
+}
+
+.bottom-menu.t5 {
+  background-color: rgba(163, 2, 57, 0.5);
+}
+
+.gal-btn button {
+  background-color: #A30239;
+  color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+.back-g-t5.featu-t1 .enq-btn ,.back-g-t5.prod-t1 .enq-btn{
+  background: #A30239;
+  color: #fff !important;
+  border: none;
+}
+.contain-template.back-g-t5.prod-t1 {
+  background-image:url('../Images/bg/t5/image\ 18.png') ;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.back-g-t5.abt-t1{
+  background-image: url(../Images/bg/t5/image\ 17.png), url(../Images/bg/t5/image\ 6.png), url('../Images/bg/t5/image\ 12.png');
+  background-repeat: no-repeat;
+  background-position: right 20%, left center, right bottom;
+}
+.temp-head h1.t5 {
+  text-align: center;
+  color: #B49142;
+  font-family: "Poppins", sans-serif;
+ font-weight: 600;
+  font-size: 35px;
+}
+.logo.t5 {
+  text-align: center;
+}
+.sh-qr.hme.t5 {
+  background: #A30239;
+  color: #fff;
+  padding: 9px;
+  box-shadow: none;
+  border-radius: 50px;
+  font-size: 24px;
+}
+.social-icon a i {
+  color: #B59448;
+}
+.infot1.t5 i {
+  color: #B59448;
+  font-size: 33px;
+}
+.infot1.t5 p {
+  font-weight: initial;
+}
+.back-g-t5.hm-t5 {
+  background-image: url('../Images/bg/t5/image\ 10.png'), url('../Images/bg/t5/image\ 6.png') ;
+  background-repeat: no-repeat;
+  background-position: left 40%, 95% 70%;
+}
 /* t5 end */

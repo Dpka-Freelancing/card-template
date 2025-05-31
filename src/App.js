@@ -18,8 +18,8 @@ function App() {
     {/* <T1 {...contactInfo} /> */}
     {/* <T2 {...contactInfo} /> */}
     {/* <T3 {...contactInfo} /> */}
-    <T4 {...contactInfo} />
-    {/* <T5 {...contactInfo} /> */}
+    {/* <T4 {...contactInfo} /> */}
+    <T5 {...contactInfo} />
 
 
     </div>

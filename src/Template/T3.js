@@ -1,11 +1,9 @@
 import React from "react";
-
 import { IoLocation } from "react-icons/io5";
 import { FaYoutube, FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-
-import logo from "../Assest/Images/t3/logo.png"
+import logo from "../Assest/Images/t3/logo.png";
 
 import About from '../Component/About';
 import Product from "../Component/Product";
@@ -17,8 +15,9 @@ import Copyrights from "../Component/Copyright";
 import Share from "../Component/Share-card";
 import Menubttm from "../Component/Menu";
 import Reviews from "../Component/Rating";
+import YouTubePopup from "../Component/Video";
 
-// Import all feature images from old feature.js
+// Feature Icons
 import img1 from "../Assest/Images/Icons/startup.png";
 import img2 from "../Assest/Images/Icons/call.png";
 import img3 from "../Assest/Images/Icons/messenger.png";
@@ -29,18 +28,29 @@ import img7 from "../Assest/Images/Icons/world-wide-web.png";
 import img9 from "../Assest/Images/Icons/online-shopping.png";
 import img13 from "../Assest/Images/Icons/rating.png";
 import img19 from "../Assest/Images/t2/puppy.png";
-import YouTubePopup from "../Component/Video";
 
 import galleryImages from "../Assest/Images/t3/gal1.jpeg";
 import galleryImages1 from "../Assest/Images/t3/gal2.jpg";
 
+const T3 = ({  theme = "template-bg3", page = "hm-t3", bckgnd = "back-g-t3", fnts = "t3" }) => {
 
+  // ✅ Header Content
+  const headerContent = {
+    logo: logo,
+    title: "PHOTO STUDIO",
+    subtitle: "Capturing Moments, Creating Memories!",
+    description: "At Photo Studio, we turn your special moments into timeless memories. Whether it’s a wedding, birthday, corporate event, or a casual photoshoot, our expert photographers ensure every shot is perfect!",
+    address: "8D/4 Malaya Street, Kodikkalpanalyam, Thiruvarur, 610001",
+    callToAction: "Book a Call",
+    socialLinks: {
+      youtube: "",
+      linkedin: "",
+      instagram: "",
+      facebook: "",
+      twitter: "",
+    },
+  };
 
-
-const T3 = ({ phone, whatsapp, locationUrl, theme = "template-bg3", page = "hm-t3", bckgnd = "back-g-t3", fnts = "t3" }) => {
-
-
- // About Content
   const aboutContent = {
     company: 'Pets World',
     category: 'Pet Shop',
@@ -55,7 +65,6 @@ const T3 = ({ phone, whatsapp, locationUrl, theme = "template-bg3", page = "hm-t
     ]
   };
 
-  // Product Content
   const productContent = {
     heading: "Products/Services",
     highlight: "Everything Your Pet Needs at Pets World",
@@ -74,7 +83,7 @@ const T3 = ({ phone, whatsapp, locationUrl, theme = "template-bg3", page = "hm-t
     ctaLink: "/contact",
   };
 
-   const paymentContent = {
+  const paymentContent = {
     upi: ["Paytm", "PhonePe", "Google Pay"],
     upiNumber: "+91-xxxxxxxxxx",
     bank: {
@@ -84,59 +93,25 @@ const T3 = ({ phone, whatsapp, locationUrl, theme = "template-bg3", page = "hm-t
     },
   };
 
-const featureContent = {
+  const featureContent = {
     heading: "Pets World – Your One-Stop Pet Shop!",
-    icon: img1, // Using startup icon as main feature icon
+    icon: img1,
     features: [
-      { 
-        icon: img2, // call icon
-        title: "Expert Pet Guidance", 
-        desc: "Get professional advice on pet care, nutrition, and training." 
-      },
-      { 
-        icon: img3, // messenger icon
-        title: "Wide Range of Pet Products", 
-        desc: "Find top-quality pet food, toys, accessories, and healthcare essentials." 
-      },
-      { 
-        icon: img4, // mail icon
-        title: "Live Pets Available", 
-        desc: "Adopt adorable puppies, kittens, birds, fish, and more!" 
-      },
-      { 
-        icon: img5, // pin1 icon
-        title: "Hassle-Free Shopping", 
-        desc: "Easy ordering, secure payments, and doorstep delivery." 
-      },
-      { 
-        icon: img6, // smartphone icon
-        title: "Exciting Offers & Discounts", 
-        desc: "Enjoy seasonal deals and exclusive member benefits." 
-      },
-      { 
-        icon: img7, // world-wide-web icon
-        title: "Customer Reviews & Ratings", 
-        desc: "See what fellow pet lovers say about our products and services." 
-      },
-      { 
-        icon: img9, // online-shopping icon
-        title: "Personalized Recommendations", 
-        desc: "We help you choose the best products for your pet's unique needs." 
-      },
-      { 
-        icon: img13, // rating icon
-        title: "Customer Reviews", 
-        desc: "Read what our pet parents say." 
-      }
+      { icon: img2, title: "Expert Pet Guidance", desc: "Get professional advice on pet care, nutrition, and training." },
+      { icon: img3, title: "Wide Range of Pet Products", desc: "Find top-quality pet food, toys, accessories, and healthcare essentials." },
+      { icon: img4, title: "Live Pets Available", desc: "Adopt adorable puppies, kittens, birds, fish, and more!" },
+      { icon: img5, title: "Hassle-Free Shopping", desc: "Easy ordering, secure payments, and doorstep delivery." },
+      { icon: img6, title: "Exciting Offers & Discounts", desc: "Enjoy seasonal deals and exclusive member benefits." },
+      { icon: img7, title: "Customer Reviews & Ratings", desc: "See what fellow pet lovers say about our products and services." },
+      { icon: img9, title: "Personalized Recommendations", desc: "We help you choose the best products for your pet's unique needs." },
+      { icon: img13, title: "Customer Reviews", desc: "Read what our pet parents say." }
     ],
-    image: img19, // puppy.png from t2 folder
+    image: img19,
     ctaHeading: "Call Shop",
     ctaButtonText: "Enquiry",
     ctaLink: "/contact"
   };
 
-
-  // Gallery Content
   const galleryContent = {
     images: [
       galleryImages,
@@ -144,21 +119,18 @@ const featureContent = {
     ],
   };
 
-  // Reviews Content
   const reviewsContent = [
     {
       name: "Nisar Sulthan",
       date: "November 8, 2024",
       stars: 5,
-      review:
-        "Excellent service! Highly recommend. The team was very professional and delivered on time.",
+      review: "Excellent service! Highly recommend. The team was very professional and delivered on time.",
     },
     {
       name: "Mohammed Bakkar",
       date: "October 25, 2024",
       stars: 4,
-      review:
-        "Great experience overall. The product quality was good, but there was a slight delay in delivery.",
+      review: "Great experience overall. The product quality was good, but there was a slight delay in delivery.",
     },
     {
       name: "Sathu Lee",
@@ -170,100 +142,69 @@ const featureContent = {
       name: "Selvaraj",
       date: "August 15, 2024",
       stars: 5,
-      review:
-        "Fantastic! Couldn't have asked for a better experience. Will use their services again.",
+      review: "Fantastic! Couldn't have asked for a better experience. Will use their services again.",
     },
     {
       name: "Vasanth",
       date: "April 15, 2024",
       stars: 3,
-      review:
-        "It was okay. Some parts of the service were good, others not so much.",
+      review: "It was okay. Some parts of the service were good, others not so much.",
     },
-        {
-      name: "Sathu Lee",
-      date: "September 30, 2024",
-      stars: 3,
-      review: "Average experience. The service was decent but not exceptional.",
-    },
-    {
-      name: "Selvaraj",
-      date: "August 15, 2024",
-      stars: 5,
-      review:
-        "Fantastic! Couldn't have asked for a better experience. Will use their services again.",
-    },
-    {
-      name: "Vasanth",
-      date: "April 15, 2024",
-      stars: 3,
-      review:
-        "It was okay. Some parts of the service were good, others not so much.",
-    }
   ];
 
-  // Share Content
   const shareContent = {
-    mapUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0197704994483!2d-122.41941538468148!3d37.77492977975909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b7c9dff%3A0x5e262e0b56c37a20!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1588017366922!5m2!1sen!2sus",
+    mapUrl: "https://www.google.com/maps/embed?...",
     shareText: "Check out my SpotCard digital business card!",
   };
 
-
-    return (
-        <div className={`template-bg  pt-3 pb-2 ${theme}`} id="home">
-            <div className="v-template1">
-                <div className={`contain-template ${bckgnd} ${page} `}>
-                    <div className="container">
-                        <div className="row">
-                            <div className={`logo pt-3 ${fnts}`}>
-                                <img src={logo} alt="logo" className="img-fluid" />
-                            </div>
-                            <div className="temp-head mt-4">
-                                <h1 className={`${fnts}`}>PHOTO STUDIO</h1>
-                                <h3 className={`${fnts}`}>Capturing Moments, Creating Memories! </h3>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div className={`temp ${fnts} pt-3`}>
-                        <div className="container">
-                            <div className="row">
-                                <div className="temp-head mt-4">
-                                    <p className={`${fnts}`}>At Photo Studio, we turn your special moments into timeless memories. Whether it’s a wedding, birthday, corporate event, or a casual photoshoot, our expert photographers ensure every shot is perfect!</p>
-                                </div>
-                                <div className="info-temp mt-4">
-                                    <div className={`infot1 ${fnts}`}>
-                                        <i><IoLocation /></i>
-                                        <p>8D/4 Malaya Street, Kodikkalpanalyam,
-                                            Thiruvarur,610001 </p>
-                                    </div>
-
-                                </div>
-                                <div className={`share-btn mb-3 mt-3 ${fnts}`}>
-                                    <button type="button" className={`sh-qr hme ${fnts}`}>Book a Call</button>
-                                </div>
-
-                                <div className={`social-icon mt-2 mb-4 ${fnts}`}>
-                                    <a href="" className="you-tube"><i><FaYoutube /></i></a>
-                                    <a href="" className="linked-in"><i><FaLinkedinIn /></i></a>
-                                    <a href="" className="insta"><i><FaInstagram /></i></a>
-                                    <a href="" className="facebook"><i><FaFacebookF /></i></a>
-                                    <a href="" className="twiter"><i><FaXTwitter /></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className={`template-bg pt-3 pb-2 ${theme}`} id="home">
+      <div className="v-template1">
+        <div className={`contain-template ${bckgnd} ${page}`}>
+          <div className="container">
+            <div className="row">
+              <div className={`logo pt-3 ${fnts}`}>
+                <img src={headerContent.logo} alt="logo" className="img-fluid" />
+              </div>
+              <div className="temp-head mt-4">
+                <h1 className={fnts}>{headerContent.title}</h1>
+                <h3 className={fnts}>{headerContent.subtitle}</h3>
+              </div>
             </div>
+          </div>
+          <div className={`temp ${fnts} pt-3`}>
+            <div className="container">
+              <div className="row">
+                <div className="temp-head mt-4">
+                  <p className={fnts}>{headerContent.description}</p>
+                </div>
+                <div className="info-temp mt-4">
+                  <div className={`infot1 ${fnts}`}>
+                    <i><IoLocation /></i>
+                    <p>{headerContent.address}</p>
+                  </div>
+                </div>
+                <div className={`share-btn mb-3 mt-3 ${fnts}`}>
+                  <button type="button" className={`sh-qr hme ${fnts}`}>{headerContent.callToAction}</button>
+                </div>
+                <div className={`social-icon mt-2 mb-4 ${fnts}`}>
+                  <a href={headerContent.socialLinks.youtube} className="you-tube"><i><FaYoutube /></i></a>
+                  <a href={headerContent.socialLinks.linkedin} className="linked-in"><i><FaLinkedinIn /></i></a>
+                  <a href={headerContent.socialLinks.instagram} className="insta"><i><FaInstagram /></i></a>
+                  <a href={headerContent.socialLinks.facebook} className="facebook"><i><FaFacebookF /></i></a>
+                  <a href={headerContent.socialLinks.twitter} className="twiter"><i><FaXTwitter /></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <div id="about"><About bckgnd={bckgnd} fnts={fnts} content={aboutContent} /></div>
+      <div id="about"><About bckgnd={bckgnd} fnts={fnts} content={aboutContent} /></div>
       <div id="product"><Product bckgnd={bckgnd} fnts={fnts} content={productContent} /></div>
       <div id="feature"><Feature bckgnd={bckgnd} fnts={fnts} content={featureContent} /></div>
       <div id="gallery"><Gallery bckgnd={bckgnd} fnts={fnts} content={galleryContent} /></div>
-      <div id="videogallery">
-        <YouTubePopup bckgnd={bckgnd} fnts={fnts} />
-      </div>
+      <div id="videogallery"><YouTubePopup bckgnd={bckgnd} fnts={fnts} /></div>
       <div id="payment"><Payment bckgnd={bckgnd} fnts={fnts} content={paymentContent} /></div>
       <div id="review"><Reviews bckgnd={bckgnd} fnts={fnts} content={reviewsContent} /></div>
       <div id="feedback"><Feedback bckgnd={bckgnd} fnts={fnts} /></div>
@@ -271,8 +212,8 @@ const featureContent = {
 
       <Copyrights bckgnd={bckgnd} fnts={fnts} />
       <Menubttm fnts={fnts} />
-        </div>
-    );
+    </div>
+  );
 };
 
-export default T3
+export default T3;
