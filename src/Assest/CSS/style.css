@@ -457,8 +457,13 @@
 
 button.sh-qr:hover {
   background: #d6ebdc !important;
+  color: #000 !important;
 }
 
+button.sh-qr.t6:hover {
+  background: #d6ebdc !important;
+  color: #000 !important;
+}
 button.sve-qr:hover {
   background: #d6ebdc !important;
 }
@@ -839,17 +844,17 @@ button.gallery-btn.t2 {
 }
 
 .abt-head.t2,
-.prod-head,
-.reviwe-cmn .feed-head,
-.feed-head {
+.prod-head.t2,
+.reviwe-cmn .feed-head.t2,
+.feed-head.t2 {
   margin-bottom: 55px;
   position: relative;
 }
 
-.gal-head,
-.pay-head,
-.feed-head,
-.share-head {
+.contain-template.back-g-t2 .gal-head ,
+.contain-template.back-g-t2 .pay-head,
+.contain-template.back-g-t2 .feed-head,
+.contain-template.back-g-t2 .share-head {
   margin-bottom: 95px;
   position: relative;
 }
@@ -1085,9 +1090,9 @@ button.gallery-btn.t2 {
 }
 
 .abt-head.t3,
-.prod-head,
-.reviwe-cmn .feed-head,
-.feed-head {
+.prod-head.t3,
+.reviwe-cmn .feed-head .t3,
+.feed-head .t3 {
   margin-bottom: 55px;
   position: relative;
 }
@@ -1545,3 +1550,145 @@ textarea {
   background-position: left 40%, 95% 70%;
 }
 /* t5 end */
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* t6 start */
+ h6.t6 {
+   font-family: "Poppins", sans-serif;
+}
+.contain-template.back-g-t6 {
+  background-color: #D1FFDA;
+}
+.share-head h2.t6, .fedb-t1.bg h2.t6, .fedb-t1 h2.t6, .paym-t1 h2.t6,h2.t6 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.4);
+  font-size: 36px;
+}
+h1.t6{
+
+   font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: end;
+  width: 75%;
+  float: inline-end;
+}
+.temp-head p.t6{
+  text-align: end;
+  width: 50%;
+  float: inline-end;
+  margin-top: 0px;
+}
+.infot1.t6 p {
+  text-align: end;
+  width: 60%;
+  float: inline-end;
+  font-weight: 400;
+}
+.infot1.t6 {
+  display: block;
+}
+.back-g-t6.shar-t1 {
+  background-image: url('../Images/bg/t6/t6-bg.png') ;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.share-btn.t6 .sh-qr, .share-btn.t6 .sve-qr, .gallery-btn.t6,.back-g-t6.featu-t1 a.enq-btn, .back-g-t6.prod-t1 a.enq-btn {
+  background: #6C5233;
+  box-shadow: none;
+  color: #fff !important;
+  border: none;
+}
+.back-g-t6.fedb-t1.bg button, .back-g-t6.fedb-t1 button {
+  background: #6C5233;
+  box-shadow: none;
+}
+.back-g-t6.fedb-t1.bg {
+   background-image: url('../Images/bg/t6/t6-bg.png'), url('../Images/bg/t6/lap.png') ;
+  background-repeat: no-repeat;
+  background-position: right top, left 80%;
+}
+.back-g-t6.fedb-t1 {
+  background-image: url('../Images/bg/t6/mble-st.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.back-g-t6.paym-t1 {
+  background-image: url('../Images/bg/t6/payment.png');
+  background-repeat: no-repeat;
+  background-position: left 40%;
+}
+.back-g-t6.abt-t1{
+  background-image: url('../Images/bg/t6/mble-st.png'), url('../Images/bg/t6/lap.png');
+  background-repeat: no-repeat;
+  background-position: right 10%, left bottom;
+  background-size: 40%;
+}
+.back-g-t6.prod-t1{
+  background-image: url('../Images/bg/t6/t6-left.png'), url('../Images/bg/t6/right-set.png');
+  background-repeat: no-repeat;
+  background-position: left 10%, right 90%;
+  background-size: 40%;
+}
+.back-g-t6.featu-t1
+{
+  background-image: url('../Images/bg/t6/lap-right.png'), url('../Images/bg/t6/t6-left.png');
+  background-repeat: no-repeat;
+  background-position: right 10%, left 90%;
+  background-size: 40%;
+}
+.logo.pt-3.t6 {
+  text-align: end;
+}
+.sh-qr.hme.t6 {
+  width: 46%;
+  border-radius: 50px;
+}
+.share-btn.t6 {
+  display: block;
+  text-align: end;
+}
+.side-cnt.t6 {
+  background-color: #D9D9D9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17%;
+  height: 100%;
+  padding: 55px 10px;
+}
+.social-icon.t6 a i {
+  display: block;
+  padding-bottom: 20px;
+}
+.side-cnt.t6 h1.t6 {
+  margin-bottom: 85px;
+  background-color: #D9D9D9;
+}
+.logo.pt-3.t6 {
+  display: flex;
+}
+.side-head.t6 h1.t6 {
+  background: #D9D9D9;
+  position: absolute;
+  width: 47%;
+  z-index: 1;
+  font-size: 24px;
+  text-align: initial;
+  padding: 10px;
+}
+.logo-img.t6 {
+  position: absolute;
+  right: 20px;
+}
+.temp-head h1 {
+  margin-top: 100px;
+}
+.social-icon.mt-2.mb-4.t6 {
+  margin-top: 150px !important;
+}
+.side-head.t6 {
+  margin-top: 25px;
+}
+/* t6 end */
