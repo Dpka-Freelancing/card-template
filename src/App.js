@@ -24,8 +24,8 @@ function App() {
     {/* <T3 {...contactInfo} /> */}
     {/* <T4 {...contactInfo} /> */}
     {/* <T5 {...contactInfo} /> */}
-    <T6 {...contactInfo}/>
-    {/* <T7 {...contactInfo}/> */}
+    {/* <T6 {...contactInfo}/> */}
+    <T7 {...contactInfo}/>
 
 
     </div>
