@@ -239,7 +239,7 @@ const T6 = ({ theme = "template-bg6", page = "hm-t6", bckgnd = "back-g-t6", fnts
             </div>
                
               </div>
-              <div className="temp-head mt-4">
+            <div className={`temp-head mt-4 ${fnts}`}>
                 <h1 className={`${fnts}`}>{headerContent.heading}</h1>
                 <h3 className={`${fnts}`}>{headerContent.subHeading}</h3>
               </div>
@@ -260,7 +260,7 @@ const T6 = ({ theme = "template-bg6", page = "hm-t6", bckgnd = "back-g-t6", fnts
                     <p>{headerContent.address}</p>
                   </div>
                 </div>
-                <div className={`share-btn mb-3 mt-3 ${fnts}`}>
+                <div className={`share-btn hme-topbtn mb-3 mt-3 ${fnts}`}>
                   <button type="button" className={`sh-qr hme ${fnts}`}>
                     {headerContent.buttonText}
                   </button>

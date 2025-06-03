@@ -1599,6 +1599,7 @@ h1.t6{
   box-shadow: none;
   color: #fff !important;
   border: none;
+  font-size: 15px;
 }
 .back-g-t6.fedb-t1.bg button, .back-g-t6.fedb-t1 button {
   background: #6C5233;
@@ -1640,12 +1641,11 @@ h1.t6{
 }
 .logo.pt-3.t6 {
   text-align: end;
-}
-.sh-qr.hme.t6 {
+}.hme.t6 {
   width: 46%;
   border-radius: 50px;
 }
-.share-btn.t6 {
+.hme-topbtn.t6 {
   display: block;
   text-align: end;
 }
@@ -1682,7 +1682,7 @@ h1.t6{
   position: absolute;
   right: 20px;
 }
-.temp-head h1 {
+.temp-head h1.t6 {
   margin-top: 100px;
 }
 .social-icon.mt-2.mb-4.t6 {
@@ -1692,3 +1692,144 @@ h1.t6{
   margin-top: 25px;
 }
 /* t6 end */
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* T7 start */
+h2.t7, h1.t7{
+  font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #fff;
+}
+.contain-template.back-g-t7.hm-t7 .temp-head.mt-4 {
+  text-align: center;
+}
+h3.t7{
+  font-family: "Playfair Display SC", serif;
+  font-weight: 500;
+  font-size: 21px;
+  color: #fff;
+}
+h1.t7 {
+  letter-spacing: 10px;
+}
+.social-icon.mt-2.mb-4.t7 {
+  text-align: inherit;
+}
+.social-icon.foot-hme.mt-2.mb-2.t7 a i {
+  color: #164856;
+  font-size: 40px;
+}
+.social-icon.foot-hme.mt-2.mb-2.t7 a i {
+  color: #164856;
+  font-size: 40px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  padding-top: 0px;
+  padding-bottom: 8px;
+}
+.spl-bghm {
+  background-image:url('../Images/bg/t7/bg-1.png') ;
+}
+h6.t7{
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.contain-template.back-g-t7.fedb-t1 {
+  background-image: url('../Images/bg/t7/bg-5.png');
+  background-repeat: no-repeat;
+  background-position: left 20%;
+  color: #fff;
+}
+.contain-template.back-g-t7.paym-t1 .upi-value {
+  color: #000;
+}
+.contain-template.back-g-t7 .url-bx p {
+  color: #000;
+}
+.back-g-t7 .url-bx {
+  box-shadow: none;
+}
+.contain-template.back-g-t7 {
+  background-color: #164856;
+}
+.contain-template.back-g-t7 .form-des input, .contain-template.back-g-t7 .form-des textarea {
+  background-color: rgba(255,255,255, 0.5) !important;
+}
+.contain-template.back-g-t7 button {
+  background: #fff;
+  color: #000;
+  box-shadow: none;
+}
+.contain-template.back-g-t7.fedb-t1.bg {
+  background-image: url('../Images/bg/t7/bg-4.png'), url('../Images/bg/t7/bg-3.png');
+  background-repeat: no-repeat;
+  background-position: right 33%, left bottom;
+}
+.share-btn.t7 .sh-qr,.share-btn.t7 .sve-qr {
+  background: #fff;
+  box-shadow: none;
+}
+.back-g-t7.cpy-right,.back-g-t7.shar-t1 {
+  background-image: url('../Images/t7/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.contain-template.back-g-t7 p {
+  color: #fff;
+}
+/* .back-g-t7.shar-t1 .share-cmn {
+  background-image:url('../Images/bg/t7/bg-2.png') ;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+} */
+.contain-template.back-g-t7.paym-t1 {
+  background-image:url('../Images/bg/t7/bg-6.png') ;
+  background-repeat: no-repeat;
+  background-position: left 37%;
+  background-size: 41%;
+}
+.gallery-btn.t7 {
+  border: none;
+  border-radius: 50px;
+  padding: 6px 12px;
+}
+.contain-template.back-g-t7.featu-t1 {
+  background-image: url('../Images/bg/t7/bg-3.png'),url('../Images/bg/t7/bg-7.png');
+  background-repeat: no-repeat;
+  background-position: left 9%,right 90%;
+  background-size: 34%;
+}
+.contain-template.back-g-t7.prod-t1 {
+  background-image:url('../Images/bg/t7/bg-1.png'),url('../Images/bg/t7/bg-8.png') ;
+  background-repeat: no-repeat;
+ background-position: right top,left 80%;
+  background-size: 40%;
+}
+li.t7 {
+  color: #fff;
+}
+.spl.abt.t7 li {
+  color: #fff;
+}
+.contain-template.back-g-t7.abt-t1 {
+  background-image:url('../Images/bg/t7/bg-9.png'), url('../Images/bg/t7/bg-10.png') ;
+  background-repeat: no-repeat;
+ background-position: right top,left 90%;
+  background-size: 26%;
+}
+.contain-template.back-g-t7.hm-t7{
+  background-image: url('../Images/t7/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.logo.t7 {
+  background-color: #AECED7;
+  width: auto;
+  border: 7px solid #CDB170;
+  border-radius: 50px 0;
+  margin: auto;
+    margin-top: auto;
+  margin-top: 60px;
+}
+/* T7 end */

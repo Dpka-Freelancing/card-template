@@ -9,6 +9,8 @@ import T3 from './Template/T3';
 import T4 from './Template/T4'; 
 import T5 from './Template/T5'; 
 import T6 from './Template/T6'; 
+import T7 from './Template/T7'; 
+
 
 
 
@@ -23,6 +25,7 @@ function App() {
     {/* <T4 {...contactInfo} /> */}
     {/* <T5 {...contactInfo} /> */}
     <T6 {...contactInfo}/>
+    {/* <T7 {...contactInfo}/> */}
 
 
     </div>
