@@ -43,7 +43,7 @@ const Share = ({ bckgnd, fnts, content }) => {
                                     <QRCodeCanvas value={shareUrl} size={200} includeMargin={true} />
                                 </div>
                             </div>
-                            <div className={`share-btn ${fnts} pb-4`}>
+                            <div className={`share-btn sh-ft ${fnts} pb-4`}>
                                 <button type="button" className="sh-qr" onClick={() => setShowPopup(true)}>
                                     Share
                                 </button>

@@ -116,6 +116,10 @@ const T3 = ({  theme = "template-bg3", page = "hm-t3", bckgnd = "back-g-t3", fnt
     images: [
       galleryImages,
       galleryImages1,
+       galleryImages,
+      galleryImages1,
+       galleryImages,
+      galleryImages1,
     ],
   };
 
@@ -188,9 +192,9 @@ const T3 = ({  theme = "template-bg3", page = "hm-t3", bckgnd = "back-g-t3", fnt
                   <button type="button" className={`sh-qr hme ${fnts}`}>{headerContent.callToAction}</button>
                 </div>
                 <div className={`social-icon mt-2 mb-4 ${fnts}`}>
-                  <a href={headerContent.socialLinks.youtube} className="you-tube"><i><FaYoutube /></i></a>
-                  <a href={headerContent.socialLinks.linkedin} className="linked-in"><i><FaLinkedinIn /></i></a>
-                  <a href={headerContent.socialLinks.instagram} className="insta"><i><FaInstagram /></i></a>
+                  <a href={headerContent.socialLinks.youtube} className="youtube"><i><FaYoutube /></i></a>
+                  <a href={headerContent.socialLinks.linkedin} className="linkedin"><i><FaLinkedinIn /></i></a>
+                  <a href={headerContent.socialLinks.instagram} className="instagram"><i><FaInstagram /></i></a>
                   <a href={headerContent.socialLinks.facebook} className="facebook"><i><FaFacebookF /></i></a>
                   <a href={headerContent.socialLinks.twitter} className="twiter"><i><FaXTwitter /></i></a>
                 </div>

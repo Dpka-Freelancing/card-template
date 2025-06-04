@@ -79,7 +79,7 @@ const T5 = ({ phone, whatsapp, locationUrl, theme = "template-bg5", page = "hm-t
       "Convenient & secure payment options",
       "Friendly service from passionate pet lovers",
     ],
-    image: "../Assest/Images/t2/puppy.png",
+    image: img19,
     ctaHeading: "Call Shop",
     ctaButtonText: "Enquiry",
     ctaLink: "/contact",

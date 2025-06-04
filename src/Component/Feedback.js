@@ -165,7 +165,7 @@ const handleEnquireSubmit = async (e) => {
                                         </div>
                                         <button 
                                             type="submit" 
-                                            className="ylw-btn"
+                                            className={`ylw-btn ${fnts}`}
                                             disabled={isLoading.feedback}
                                         >
                                             {isLoading.feedback ? 'Sending...' : 
@@ -246,7 +246,7 @@ const handleEnquireSubmit = async (e) => {
                                         </div>
                                         <button 
                                             type="submit" 
-                                            className="ylw-btn"
+                                            className={`ylw-btn ${fnts}`}
                                             disabled={isLoading.enquire}
                                         >
                                             {isLoading.enquire ? 'Sending...' : 

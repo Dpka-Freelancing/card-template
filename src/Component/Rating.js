@@ -36,12 +36,12 @@ const Reviews = ({ bckgnd, fnts, content }) => {
                             ))}
                             <div className="button-container">
                                 {visibleReviews < content.length && (
-                                    <button onClick={loadMoreReviews} className="load-more-button ylw-btn">
+                                    <button onClick={loadMoreReviews} className={`load-more-button ylw-btn ${fnts}`}>
                                         Load More Reviews
                                     </button>
                                 )}
                                 {visibleReviews > 5 && (
-                                    <button onClick={hideReviews} className="hide-reviews-button ylw-btn">
+                                    <button onClick={hideReviews} className={`hide-reviews-button ylw-btn ${fnts}`}>
                                         Hide Reviews
                                     </button>
                                 )}

@@ -103,7 +103,7 @@ const T4 = ({
   };
 
   const galleryContent = {
-    images: [galleryImages, galleryImages1],
+    images: [galleryImages, galleryImages1,galleryImages, galleryImages1],
   };
 
   const reviewsContent = [

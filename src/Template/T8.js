@@ -10,7 +10,7 @@ import { RiGlobeFill, RiMailCheckFill } from "react-icons/ri";
 import { MdCall } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 
-import logo from "../Assest/Images/logo2.png";
+import logo from "../Assest/Images/t8/logo.png";
 import About from "../Component/About";
 import Product from "../Component/Product";
 import Feature from "../Component/Feature";
@@ -23,8 +23,6 @@ import Menubttm from "../Component/Menu";
 import Reviews from "../Component/Rating";
 import YouTubePopup from "../Component/Video";
 
-import img1 from "../Assest/Images/bg/Blob-4.png";
-import img2 from "../Assest/Images/bg/Blob-7.png";
 import productImg from "../Assest/Images/Rectangle 24.png";
 import galleryImages from "../Assest/Images/gal-2.png";
 import galleryImages1 from "../Assest/Images/vc.jpg";
@@ -51,14 +49,14 @@ import spotcardIcon from "../Assest/Images/Icons/pin.png";
 import featureMainImage from "../Assest/Images/Rectangle 24.png";
 
 
-const T1 = ({
+const T8 = ({
   phone,
   whatsapp,
   locationUrl,
-  theme = "template-bg1",
-  page = "hm",
-  bckgnd = "back-g",
-  fnts = "t1",
+  theme = "template-bg8",
+  page = "hm-t8",
+  bckgnd = "back-g-t8",
+  fnts = "t8",
 }) => {
 
 
@@ -67,16 +65,14 @@ const T1 = ({
     logo: {
       src: logo,
       alt: "logo",
-      style: {
-        width: "200px",
-        height: "200px",
-        objectFit: "contain"
-      }
+      
     },
     headings: {
-      main: "Spotcard",
-      sub: "India's Leading Digital Vcard Agency"
+      main: "Online Custom Gifting Store",
+      sub: "Sell personalized gifts like mugs, photo frames, keychains, and digital gift cards."
+      
     },
+    
     buttons: [
       {
         type: "call",
@@ -98,6 +94,9 @@ const T1 = ({
         rel: "noopener noreferrer"
       }
     ],
+    splcnt:{
+subpara: "Make Every Gift Personal Customized gifts made with love. Delivered to your doorstep."
+    },
     infoItems: [
       {
         icon: <FaFlag />,
@@ -397,14 +396,12 @@ END:VCARD
 
   return (
     <div className={`template-bg  pt-3 pb-2 ${theme}`} >
-      <img src={img2} alt="Blob 7" className="blob blob-top" />
-      <img src={img1} alt="Blob 4" className="blob blob-bottom" />
       <div className="v-template1 " id="home">
         <div className={`contain-template ${bckgnd} ${page}`}>
           <div className="container">
             <div className="row">
               {/* Logo */}
-              <div className="logo-t1">
+              <div className={`logo ${fnts}`}>
                 <img
                   src={headerContent.logo.src}
                   alt={headerContent.logo.alt}
@@ -415,17 +412,17 @@ END:VCARD
 
               {/* Headings */}
               <div className="temp-head mt-4">
-                <h1 className="t1">{headerContent.headings.main}</h1>
-                <h3 className="t1">{headerContent.headings.sub}</h3>
+                <h1 className={`${fnts}`}>{headerContent.headings.main}</h1>
+                <h3 className={`${fnts}`}>{headerContent.headings.sub}</h3>
               </div>
 
               {/* Action Buttons */}
-              <div className="temp-hme btn1 mt-3">
+                <div className={`temp-hme btn1 mt-3 ${fnts}`}>
                 {headerContent.buttons.map((button, index) => (
                   <div className="btn-a" key={index}>
                     <a
                       href={button.link}
-                      className="navi-a"
+                        className={`navi-a ${fnts}`}
                       target={button.target || ""}
                       rel={button.rel || ""}
                     >
@@ -435,18 +432,13 @@ END:VCARD
                 ))}
               </div>
 
-              {/* Info Items */}
-              <div className="info-temp mt-4">
-                {headerContent.infoItems.map((item, index) => (
-                  <div className="infot1" key={index}>
-                    <i>{item.icon}</i>
-                    <p>{item.text}</p>
-                  </div>
-                ))}
-              </div>
+                <div className={`spl-cnt ${fnts} mt-4`}>
+                     <p className={`${fnts}`}>{headerContent.splcnt.subpara}</p>
+                </div>
 
               {/* Add to Contact Button */}
-              <div className="share-btn mt-4">
+              <div className={`share-btn hme-btnn mt-4 ${fnts}`}>
+               
                 <button
                   type="button"
                   className="sh-qr"
@@ -457,7 +449,7 @@ END:VCARD
               </div>
 
               {/* Social Icons */}
-              <div className="social-icon mt-5 mb-4">
+              <div className={`social-icon mt-5 mb-4 ${fnts}`}>
                 {headerContent.socialIcons.map((social, index) => (
                   <a
                     href={social.link}
@@ -502,9 +494,9 @@ END:VCARD
         <Share bckgnd={bckgnd} fnts={fnts} content={shareContent} />
       </div>
       <Copyrights bckgnd={bckgnd} fnts={fnts} />
-      <Menubttm />
+      <Menubttm  fnts={fnts}/>
     </div>
   );
 };
 
-export default T1;
+export default T8;

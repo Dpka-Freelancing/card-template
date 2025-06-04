@@ -27,7 +27,7 @@ const Feature = ({ bckgnd, fnts, content }) => {
               <img src={content.image} alt="" className="img-fluid" />
               <div className="enq-sec mt-5">
                 <h5 className={fnts}>{content.ctaHeading}</h5>
-                <a href={content.ctaLink} className="enq-btn" type="submit">
+                <a href={content.ctaLink} className={`enq-btn ${fnts}`} type="submit">
                   {content.ctaButtonText}
                 </a>
               </div>

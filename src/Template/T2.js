@@ -34,6 +34,7 @@ import img9 from "../Assest/Images/Icons/online-shopping.png";
 import img13 from "../Assest/Images/Icons/rating.png";
 import img19 from "../Assest/Images/t2/puppy.png";
 import YouTubePopup from "../Component/Video";
+import catImage from "../Assest/Images/t2/Cat.jpg";
 
 
 const T2 = ({ phone, whatsapp, locationUrl, theme = "template-bg2", page = "hm-t2", bckgnd = "back-g-t2", fnts="t2" }) => {
@@ -113,7 +114,7 @@ const T2 = ({ phone, whatsapp, locationUrl, theme = "template-bg2", page = "hm-t
       "Convenient & secure payment options",
       "Friendly service from passionate pet lovers",
     ],
-    image: "../Assest/Images/t2/puppy.png",
+    image: catImage,
     ctaHeading: "Call Shop",
     ctaButtonText: "Enquiry",
     ctaLink: "/contact",
@@ -186,6 +187,11 @@ const featureContent = {
     images: [
       galleryImages,
       galleryImages1,
+      galleryImages,
+      galleryImages1,
+      galleryImages,
+      galleryImages1,
+      galleryImages,
     ],
   };
 
